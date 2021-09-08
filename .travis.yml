@@ -9,7 +9,7 @@ branches:
 before_script:
   - npm install -g @angular/cli
 script:
-- ng build --prod --base-href https://kapMango.github.io/ci-demo/calender
+- ng build --prod --base-href https://kapMango.github.io/ci-demo/
 
 deploy:
   provider: pages
