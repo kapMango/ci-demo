@@ -8,12 +8,12 @@ branches:
 before_script:
   - npm install -g @angular/cli
 script:
-- ng build --prod
+- ng build --prod --base-href https://kapMango.github.io/ci-demo/calender/
 
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
-  local-dir: ./dist/calender/
+  local-dir: ./dist/
   on:
