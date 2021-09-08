@@ -14,6 +14,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  local_dir: dist/ci-demo
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/travis-demo
   on:
     branch: master
