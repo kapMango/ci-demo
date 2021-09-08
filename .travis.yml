@@ -9,4 +9,11 @@ branches:
 before_script:
   - npm install -g @angular/cli
 script:
-- ng build --prod --base-href https://t-palmer.github.io/ci-demo/
+- ng build --prod --base-href https://kapMango.github.io/ci-demo/
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: dist/ci-demo
+  on:
+    branch: master
